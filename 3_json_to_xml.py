@@ -15,18 +15,9 @@ for each_item in item_details:
     # define first subelement
     etree.SubElement(root_element,"name").text = each_item["name"]
 
-    # define second sublement, which has a list, so it needs more subelements!
-    characteristics = etree.SubElement(root_element,"characteristics")
-
+    # define second sublement, which has a list, so it needs to loooooooop
     for each_characteristic in each_item["characteristics"]:
-    #    if each_characteristic >= 0 and each_characteristic < len(each_item["characteristics"]):
         etree.SubElement(characteristics,"characteristic").text = each_characteristic
-    #    etree.SubElement(characteristics,"characteristic 2").text = each_item["characteristics"][1]
-    #    etree.SubElement(characteristics,"characteristic 3").text = each_item["characteristics"][2]
-    #    etree.SubElement(characteristics,"characteristic 4").text = each_item["characteristics"][3]
-    #    etree.SubElement(characteristics,"characteristic 5").text = each_item["characteristics"][4]
-    #    etree.SubElement(characteristics,"characteristic 6").text = each_item["characteristics"][5]
-    #    print(etree.SubElement(characteristics,"characteristic").text)
 
     # define a bunch of bland-ass subelements
     etree.SubElement(root_element,"historic variety").text = each_item["historic variety"]
