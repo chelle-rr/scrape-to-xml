@@ -16,8 +16,8 @@ An ideal record might look like this:
 - Name
 - Alt names
 - Historical info
- - Year developed
- - History notes
+  - Year developed
+  - History notes
 - Mature plant height
 - Planting instructions
   - Suitable zones
