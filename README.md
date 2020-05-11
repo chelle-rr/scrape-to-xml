@@ -8,3 +8,20 @@ This file opens the all_urls.json and scrapes each page for certain info. After 
 
 3_json_to_xml.py
 This file takes item_details.json and converts it into xml, since xml is more commonly used for metadata in libraries & archives. the output is called item_details_xml.xml.
+
+
+Further steps in this project:
+There are metadata standards that are meant for plant seeds, but are more geared toward botany than agriculture. The final output of this project was just based on the info available from my original source, seedsavers.org, but a next step would be to establish what an ideal metadata record for historic, edible plant seeds might look like, and map the available data to that ideal by looking for keywords and using regular expressions. For instance, a lot of the data found under "characteristics" could be further broken out into specific elements.
+An ideal record might look like this:
+- Name
+- Alt names
+- Historical info
+- Mature plant height
+- Planting instructions
+  - Suitable zones
+  - Time of year
+  - Soil type
+  - ... etc.
+  - Other needs
+
+A still further step could attempt to fill in missing information from the "ideal" record by locating it in more general databases (i.e. finding the appropriate soil type for tomatoes in general, if not for the specific tomato variety).
